@@ -106,6 +106,8 @@ const CalculatorFunction = () => {
         setResult("");
     };
 
+
+
     return (
         <div className="calculator-container">
             <div className="calculator_history">
@@ -195,59 +197,4 @@ export default CalculatorFunction;
 
 
 
-// return (
-//     <>
-//         <input type="text" value={value + opreator} readOnly />
-//         <h1>Result : {result}</h1>
-//         {numbers.map((num, index) => (
-//             <>
-//                 <div className="button btns" key={index}>
-//                     <button
-//                         value={num}
-//                         onClick={(e) => {
-//                             handleButtonClick(e);
-//                         }}
-//                     >
-//                         {num}
-//                     </button>
-//                 </div>
-//             </>
-//         ))}
-//         {operators.map((sign) => (
-//             <>
-//                 <div className="operator" key={sign}>
-//                     <button
-//                         value={sign}
-//                         onClick={(e) => {
-//                             operates(e);
-//                         }}
-//                     >
-//                         {sign}
-//                     </button>
-//                 </div>
-//             </>
-//         ))}
 
-//         {
-//             actions.map((action, index) => (
-//                 < >
-//                     <div className="actions" key={index}>
-//                         {action === "back" ? (
-//                             <button value={action} onClick={() => clearInputsByOne()}>
-//                                 {action}
-//                             </button>
-//                         ) : action === "clear all" ? (
-//                             <button value={action} onClick={() => clearAllInputs()}>
-//                                 {action}
-//                             </button>
-//                         ) : (
-//                             <button value={action} onClick={() => showValue()}>
-//                                 {action}
-//                             </button>
-//                         )}
-//                     </div>
-//                 </>
-//             ))
-//         }
-//     </>
-// );

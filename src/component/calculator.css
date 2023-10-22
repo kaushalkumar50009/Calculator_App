@@ -7,7 +7,8 @@
 .calculator-container {
   width: 100vw;
   min-height: 100vh;
-  background-color: #011d26;
+  /* background-color: #011d26; */
+  background: url("../image/air-494020_1280.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,6 +44,7 @@
   max-height: 60rem;
   flex-flow: wrap;
   text-shadow: white 0px 0px 9px;
+  backdrop-filter: blur(30px);
 }
 
 /* Hide scrollbar thumb for Webkit-based browsers (Chrome, Safari) */
@@ -81,13 +83,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #013346;
+  background-color: #0133465e;
   width: 51rem;
   height: 51rem;
   gap: 70px;
   border-radius: 40rem 37rem 12rem 40rem;
   box-shadow: #000 12px 12px 66px 33px;
   border: 2px solid #8dd9ff94;
+  backdrop-filter: blur(13px);
 }
 
 .calculator_inner_box {
@@ -175,7 +178,7 @@ input[type="text"] {
   font-weight: bold;
   letter-spacing: 1px;
   color: #fff;
-  background-color: #024b62;
+  background-color: #024b621f;
   outline: none;
   border: 2px solid #03ffac;
   border-radius: 51px;
@@ -184,6 +187,7 @@ input[type="text"] {
   text-transform: uppercase;
   text-shadow: black 4px 4px 4px;
   transition: transform 0.2s ease-in-out;
+  /* backdrop-filter: blur(-17px); */
 }
 
 .button:hover {
